@@ -1,0 +1,24 @@
+{
+    "versions": [
+        {
+            "key": "RELEASE",
+            "baseUrl": "http://localhost:8080",
+            "order": 0
+        },
+        {
+            "key": "SNAPSHOT",
+            "baseUrl": "https://snapshot.grails.org",
+            "order": 1
+        },
+        {
+            "key": "NEXT",
+            "baseUrl": "https://next.grails.org",
+            "order": 2
+        },
+        {
+            "key": "PREV",
+            "baseUrl": "https://prev.grails.org",
+            "order": 3
+        }
+    ]
+}
