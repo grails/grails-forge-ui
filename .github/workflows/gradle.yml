@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         java: ['11']
-        node-version: '18.x'
+        node-version: [18.x]
     steps:
       - uses: actions/checkout@v3.2.0
       - name: Set up JDK
