@@ -10,7 +10,11 @@ node {
 task buildStarter(type: NpmTask) {
     dependsOn npmInstall
     workingDir = file("${rootProject.projectDir}/app/launch")
-    args = ['run', 'build', '--legacy-peer-deps']
+    args = ['run', 'build']
+}
+
+npmInstall.configure {
+    args = ['--legacy-peer-deps', '--openssl-legacy-provider']
 }
 
 task copyLaunchAssets {

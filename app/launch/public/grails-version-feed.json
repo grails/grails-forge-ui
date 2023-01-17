@@ -2,7 +2,7 @@
     "versions": [
         {
             "key": "RELEASE",
-            "baseUrl": "http://localhost:8080", /**/
+            "baseUrl": "http://localhost:8080",
             "order": 0
         },
         {
