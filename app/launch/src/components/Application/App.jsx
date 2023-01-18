@@ -16,12 +16,13 @@ import {
 } from '../../state/store'
 import { downloadBlob } from '../../utility'
 
+import { DefaultIncludedFeatureList } from './DefaultIncludedFeatureList'
 import CodePreview from '../CodePreview'
 import Diff from '../Diff'
 import ErrorView, { ErrorViewData } from '../ErrorView'
 import { errorHandlersFactory } from '../ErrorView/ErrorViewData'
 import { FeatureSelectorModal } from '../FeatureSelector'
-import { FeatureSelectedList } from '../FeatureSelector/FeatureSelected'
+import { FeatureSelectedList } from '../FeatureSelector'
 import Footer from '../Footer'
 import GenerateButtons from '../GenerateButtons/GenerateButtons'
 import Header from '../Header'
@@ -240,6 +241,9 @@ export function AppContainer({ initialData, errorHandlers }) {
             </div>
           </div>
         </div>
+      </div>
+      <div className="container mn-feature-container">
+        <DefaultIncludedFeatureList theme={theme} />
       </div>
       <div className="container mn-feature-container">
         <FeatureSelectedList theme={theme} />

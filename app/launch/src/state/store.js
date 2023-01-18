@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react'
+import {useEffect, useMemo} from 'react'
 import {
   atom,
   selector,
@@ -10,13 +10,13 @@ import {
   useSetRecoilState,
 } from 'recoil'
 
-import { sharableLink } from '../helpers/Routing'
+import {sharableLink} from '../helpers/Routing'
 
-import { setStorageValue } from '../hooks/useLocalStorage'
-import { formResets } from './factories/formResets'
+import {setStorageValue} from '../hooks/useLocalStorage'
+import {formResets} from './factories/formResets'
 
-import { StarterSDK } from './factories/StarterSDK'
-import { loadVersions } from './factories/versionLoader'
+import {StarterSDK} from './factories/StarterSDK'
+import {loadVersions} from './factories/versionLoader'
 
 const INITIAL_FORM_DATA_STORAGE_KEY = 'INITIAL_FORM_DATA'
 
@@ -81,8 +81,7 @@ export const optionsState = selector({
   get: async ({ get }) => {
     const sdk = get(sdkState)
     if (!sdk) return {}
-    const results = await sdk.selectOptions()
-    return results
+    return await sdk.selectOptions()
   },
 })
 
@@ -145,6 +144,17 @@ export const availableFeaturesState = selector({
     const type = get(appTypeState)
     if (!sdk || !type) return []
     const { features } = await sdk.features({ type })
+    return features
+  },
+})
+
+export const defaultIncludedFeaturesState = selector({
+  key: 'DEFAULT_FEATURES_FOR_TYPE_STATE',
+  get: async ({ get }) => {
+    const sdk = get(sdkState)
+    const type = get(appTypeState)
+    if (!sdk || !type) return []
+    const { features } = await sdk.defaultIncludedFeatures({ type })
     return features
   },
 })
@@ -252,6 +262,18 @@ export function useAvailableFeatures() {
   }
 }
 
+export function useDefaultIncludedFeatures() {
+  const loadable = useRecoilValueLoadable(defaultIncludedFeaturesState)
+  switch (loadable.state) {
+    case 'hasValue':
+      return { features: loadable.contents, loading: false, error: null }
+    case 'loading':
+      return { features: [], loading: true, error: null }
+    default:
+      return { features: [], loading: false, error: loadable.contents }
+  }
+}
+
 export function useSelectedVersions() {
   const [value, setter] = useRecoilState(selectedVersionState)
   const defaultVersion = useRecoilValue(initialValueState).version
@@ -292,6 +314,10 @@ export function useSelectedFeatures() {
 
 export function useSelectedFeaturesValue() {
   return useRecoilValue(featuresState)
+}
+
+export function useDefaultIncludedFeaturesValue() {
+  return useRecoilValue(defaultIncludedFeaturesState)
 }
 
 export function useSelectedFeaturesHandlers() {

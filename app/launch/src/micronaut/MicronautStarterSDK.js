@@ -84,13 +84,25 @@ export class MicronautStarterSDK {
 
   /**
    * Get a list of features for a given Application Type
-   * @param  {String} options.type Application Type
+   * @param  {String} type Application Type
    * @return {Promise<Array>}               List of features
    */
   async features({ type }) {
     return this._cache(
       `/application-types/${type}/features`,
       responseHandler('json')
+    )
+  }
+
+  /**
+   * Get a list of default included features for a given Application Type
+   * @param  {String} type Application Type
+   * @return {Promise<Array>}               List of features
+   */
+  async defaultIncludedFeatures({ type }) {
+    return this._cache(
+        `/application-types/${type}/features/default`,
+        responseHandler('json')
     )
   }
 
@@ -142,7 +154,7 @@ export class MicronautStarterSDK {
 
   /**
    * Get The HREF for the clone to github feature.
-   * @param {String} the baseUrl
+   * @param {String} baseUrl The base URL
    * @param  {Object} configuration The create command data
    * @return {String} The link will begin processing the github workflow with redirects
    */
