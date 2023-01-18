@@ -22,7 +22,7 @@ export function FeatureSelected({ feature, onRemoveFeature, hasError }) {
   }
   return (
     <div style={style} className="chip">
-      {feature.name}
+      {feature.title}
       <i
         onClick={(e) => {
           e.preventDefault()
@@ -45,7 +45,7 @@ export function FeatureSelectedList() {
   const selectedFeatureValues = useMemo(
     () =>
       Object.values(selectedFeatures).sort((a, b) => {
-        return a.name > b.name ? 1 : -1
+        return a.title > b.title ? 1 : -1
       }),
     [selectedFeatures]
   )

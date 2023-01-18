@@ -13,8 +13,8 @@ const FeatureAvailable = ({ feature, toggleFeatures }) => {
             }`}
             title={
                 (feature.preview != null && feature.preview
-                    ? feature.name + ' (preview)'
-                    : feature.name) +
+                    ? feature.title + ' (preview)'
+                    : feature.title) +
                 (feature.community != null && feature.community
                     ? ' (community)'
                     : '')
