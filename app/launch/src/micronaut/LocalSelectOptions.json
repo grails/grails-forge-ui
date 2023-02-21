@@ -3,46 +3,46 @@
         "options": [
             {
                 "name": "default",
-                "title": "Micronaut Application",
-                "description": "A Micronaut Application",
+                "title": "Grails Application",
+                "description": "A Grails Web Application",
                 "value": "DEFAULT",
-                "label": "Micronaut Application"
+                "label": "Default"
             },
             {
-                "name": "cli",
-                "title": "Micronaut CLI Application",
-                "description": "A Command Line Application",
-                "value": "CLI",
-                "label": "Command Line Application"
+                "name": "web",
+                "title": "Grails Web Application",
+                "description": "A Web Application",
+                "value": "WEB",
+                "label": "Web"
             },
             {
-                "name": "function",
-                "title": "Micronaut Serverless Function",
-                "description": "A Function Application for Serverless",
-                "value": "FUNCTION",
-                "label": "Function Application for Serverless"
+                "name": "restapi",
+                "title": "Grails REST API Application",
+                "description": "A Grails REST API Application",
+                "value": "REST_API",
+                "label": "REST API"
             },
             {
-                "name": "grpc",
-                "title": "Micronaut gRPC Application",
-                "description": "A gRPC Application",
-                "value": "GRPC",
-                "label": "gRPC Application"
+                "name": "plugin",
+                "title": "Grails Plugin",
+                "description": "A Grails Plugin Application",
+                "value": "PLUGIN",
+                "label": "Plugin"
             },
             {
-                "name": "messaging",
-                "title": "Micronaut Messaging Application",
-                "description": "A Messaging-Driven Application",
-                "value": "MESSAGING",
-                "label": "Messaging-Driven Application"
+                "name": "webplugin",
+                "title": "Grails Web Plugin",
+                "description": "A Grails Web Plugin",
+                "value": "WEB_PLUGIN",
+                "label": "Web Plugin"
             }
         ],
         "defaultOption": {
             "name": "default",
-            "title": "Micronaut Application",
-            "description": "A Micronaut Application",
-            "value": "DEFAULT",
-            "label": "Micronaut Application"
+            "title": "Grails Web Application",
+            "description": "A Grails Web Application",
+            "value": "DEFAULT_OPTION",
+            "label": "Grails Web Application"
         }
     },
     "jdkVersion": {
@@ -102,6 +102,28 @@
             "description": "JDK_11",
             "label": "11"
         }
+    },
+    "gorm": {
+        "options": [
+            {
+                "value": "gorm-hibernate5",
+                "name": "gorm-hibernate5",
+                "description" : "The Hibernate5 GORM Implementation",
+                "label": "GORM Hibernate5"
+            },
+            {
+                "value": "gorm-mongodb",
+                "name": "gorm-mongodb",
+                "description" : "The MongoDB GORM Implementation",
+                "label": "GORM MongoDB"
+            },
+            {
+                "value": "gorm-neo4j",
+                "name": "gorm-neo4j",
+                "description" : "The Neo4J GORM Implementation",
+                "label": "GORM Neo4J"
+            }
+        ]
     },
     "lang": {
         "options": [

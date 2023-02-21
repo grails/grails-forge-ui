@@ -4,13 +4,13 @@ import ToUrl from './creators/ToUrl'
 
 export class CreateCommand {
   constructor(
-    { type, javaVersion, build, lang, test, name, package: _package, features },
+    { type, javaVersion, build, gorm, test, name, package: _package, features },
     baseUrl = ''
   ) {
     this.type = type
     this.javaVersion = javaVersion
     this.name = name
-    this.lang = lang
+    this.gorm = gorm
     this.build = build
     this.test = test
     this.package = _package

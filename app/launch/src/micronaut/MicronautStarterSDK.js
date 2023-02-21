@@ -1,6 +1,7 @@
 import { CacheApi, SessionStorageAdapter } from '../helpers/Cache'
 import { VERSION_FEED_URL } from './constants'
 import { CreateCommand } from './CreateCommand'
+import {FeatureCommand} from "./FeatureCommand";
 
 const responseHandler =
   (type = 'json') =>
@@ -85,23 +86,29 @@ export class MicronautStarterSDK {
   /**
    * Get a list of features for a given Application Type
    * @param  {String} type Application Type
+   * @param  {Object} form command parameters
    * @return {Promise<Array>}               List of features
    */
-  async features({ type }) {
+  async features({ type, form }) {
+    const featuresUrl = this.baseUrl + `/application-types/${type}/features`
+    const featuresCommand = new FeatureCommand(form, featuresUrl);
     return this._cache(
-      `/application-types/${type}/features`,
-      responseHandler('json')
+        featuresCommand.toUrl(),
+        responseHandler('json')
     )
   }
 
   /**
    * Get a list of default included features for a given Application Type
    * @param  {String} type Application Type
+   * @param  {Object} form, command parameters
    * @return {Promise<Array>}               List of features
    */
-  async defaultIncludedFeatures({ type }) {
+  async defaultIncludedFeatures({ type, form}) {
+    const featuresUrl = this.baseUrl + `/application-types/${type}/features/default`
+    const featuresCommand = new FeatureCommand(form, featuresUrl);
     return this._cache(
-        `/application-types/${type}/features/default`,
+        featuresCommand.toUrl(),
         responseHandler('json')
     )
   }

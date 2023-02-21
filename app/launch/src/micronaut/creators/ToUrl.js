@@ -8,6 +8,25 @@ function buildFeaturesQuery(features) {
 }
 
 export default class ToUrl {
+
+  static makeFeaturesUrl(featureCommand, baseUrl) {
+    const {
+      javaVersion,
+      build,
+      gorm,
+      test,
+    } = featureCommand
+
+    const query = [
+      gorm && `gorm=${featureCommand.gorm}`,
+      build && `build=${featureCommand.build}`,
+      test && `test=${featureCommand.test}`,
+      javaVersion && `javaVersion=${featureCommand.javaVersion}`,
+    ].filter((i) => i)
+
+    return encodeURI(`${baseUrl}?${query.join('&')}`)
+  }
+
   static make(createCommand, prefix) {
     if (!prefix) {
       console.error(
@@ -16,7 +35,7 @@ export default class ToUrl {
     }
     const {
       type,
-      lang,
+      gorm,
       build,
       test,
       javaVersion,
@@ -28,7 +47,7 @@ export default class ToUrl {
     const base = `/${prefix}/${type.toLowerCase()}/${applicationName}`
 
     const query = [
-      lang && `lang=${lang}`,
+      gorm && `gorm=${gorm}`,
       build && `build=${build}`,
       test && `test=${test}`,
       javaVersion && `javaVersion=${javaVersion}`,

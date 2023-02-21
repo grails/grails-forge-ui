@@ -16,7 +16,6 @@ import {
 } from '../../state/store'
 import { downloadBlob } from '../../utility'
 
-import { DefaultIncludedFeatureList } from './DefaultIncludedFeatureList'
 import CodePreview from '../CodePreview'
 import Diff from '../Diff'
 import ErrorView, { ErrorViewData } from '../ErrorView'
@@ -30,6 +29,7 @@ import NextSteps from '../NextSteps'
 import StarterForm from '../StarterForm'
 import { AppLoadingBackdrop } from './AppLoadingBackdrop'
 import { DebugInfo } from './DebugInfo'
+import { DefaultIncludedFeatureList } from './DefaultIncludedFeatureList'
 import { useOnMountRouting } from './useOnMountRouting'
 
 export function Root() {

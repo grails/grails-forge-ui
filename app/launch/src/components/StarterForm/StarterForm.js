@@ -1,11 +1,12 @@
 // StarterForm.js
+import React from "react";
 import Col from 'react-materialize/lib/Col'
 import Row from 'react-materialize/lib/Row'
 
 import StarterFormApplicationType from './StarterFormApplicationType'
 import StarterFormBuild from './StarterFormBuild'
+import StarterFormGorm from "./StarterFormGorm";
 import StarterFormJavaVersion from './StarterFormJavaVersion'
-import StarterFormLang from './StarterFormLang'
 import StarterFormMicronautVersion from './StarterFormMicronautVersion'
 import StarterFormName from './StarterFormName'
 import StarterFormPackage from './StarterFormPackage'
@@ -30,7 +31,7 @@ const StarterForm = ({ onError }) => {
         <StarterFormMicronautVersion />
       </Col>
       <Col m={3} s={12} className="mn-radio">
-        <StarterFormLang />
+        <StarterFormGorm />
       </Col>
       <Col m={3} s={12} className="mn-radio">
         <StarterFormBuild />

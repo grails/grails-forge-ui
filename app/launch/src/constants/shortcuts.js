@@ -3,6 +3,7 @@ import {
   KEY_CODE_B,
   KEY_CODE_D,
   KEY_CODE_ENTER,
+  KEY_CODE_G,
   KEY_CODE_J,
   KEY_CODE_L,
   KEY_CODE_P,
@@ -60,6 +61,12 @@ export const NEXT_LANG_SHORTCUT = {
   label: 'Toggle to the Next Language',
   textValue: SHIFT_TEXT + ' + L',
   keys: [KEY_CODE_SHIFT, KEY_CODE_L],
+}
+
+export const NEXT_GORM_SHORTCUT = {
+  label: 'Toggle to the Next GORM',
+  textValue: SHIFT_TEXT + ' + G',
+  keys: [KEY_CODE_SHIFT, KEY_CODE_G],
 }
 
 export const NEXT_BUILD_SHORTCUT = {

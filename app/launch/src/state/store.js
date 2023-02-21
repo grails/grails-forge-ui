@@ -126,6 +126,11 @@ export const buildState = atom({
   default: defaultValueSelectorFactory('build'),
 })
 
+export const gormState = atom({
+  key: 'GORM_STATE',
+  default: defaultValueSelectorFactory('gorm'),
+})
+
 export const javaVersionState = atom({
   key: 'JAVA_VERSION_STATE',
   default: defaultValueSelectorFactory('javaVersion'),
@@ -142,8 +147,9 @@ export const availableFeaturesState = selector({
   get: async ({ get }) => {
     const sdk = get(sdkState)
     const type = get(appTypeState)
+    const form = get(starterFormState)
     if (!sdk || !type) return []
-    const { features } = await sdk.features({ type })
+    const { features } = await sdk.features({ type, form })
     return features
   },
 })
@@ -153,8 +159,9 @@ export const defaultIncludedFeaturesState = selector({
   get: async ({ get }) => {
     const sdk = get(sdkState)
     const type = get(appTypeState)
-    if (!sdk || !type) return []
-    const { features } = await sdk.defaultIncludedFeatures({ type })
+    const form = get(starterFormState)
+    if (!sdk || !form.type) return []
+    const { features } = await sdk.defaultIncludedFeatures({type, form})
     return features
   },
 })
@@ -166,7 +173,7 @@ export const starterFormState = selector({
     const name = get(nameState)
     const pkg = get(packageState)
     const build = get(buildState)
-    const lang = get(langState)
+    const gorm = get(gormState)
     const test = get(testState)
     const javaVersion = get(javaVersionState)
     const features = get(featuresState)
@@ -179,7 +186,7 @@ export const starterFormState = selector({
       name,
       package: pkg,
       javaVersion,
-      lang,
+      gorm,
       build,
       test,
       features,
@@ -385,6 +392,13 @@ export const useBuild = () => {
   return [value, setter, select]
 }
 
+export const useGorm = () => {
+  const [value, setter] = useRecoilState(gormState)
+  const select = useSelectOptionsForType('gorm')
+  useDerivedDefultsEffect(select, setter)
+  return [value, setter, select]
+}
+
 export const useJavaVersion = () => {
   const [value, setter] = useRecoilState(javaVersionState)
   const select = useSelectOptionsForType('jdkVersion')
@@ -418,7 +432,7 @@ export const useResetStarterForm = () => {
 
     set(appTypeState, options.type.defaultOption.value)
     set(buildState, options.build.defaultOption.value)
-    set(langState, options.lang.defaultOption.value)
+    set(gormState, options.gorm.defaultOption.value)
     set(testState, options.test.defaultOption.value)
     set(javaVersionState, options.jdkVersion.defaultOption.value)
     set(featuresState, {})
