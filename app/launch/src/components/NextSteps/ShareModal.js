@@ -79,8 +79,8 @@ const ShareModal = ({ theme, trigger, onClose }, ref) => {
       <p className="info">
         Once you’ve gotten your new project started, you can continue your
         journey by reviewing our{' '}
-        <a href="https://micronaut.io/documentation.html">documentation</a> and{' '}
-        <a href="https://micronaut.io/learn.html">learning resources</a>
+        <a href="https://grails.org/documentation.html">documentation</a> and{' '}
+        <a href="https://guides.grails.org/index.html">Grails Guides</a>
       </p>
     </Modal>
   )

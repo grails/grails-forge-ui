@@ -48,7 +48,7 @@ const NextSteps = ({ info, theme = 'light', onClose, onStartOver }) => {
   }, [name])
 
   const launchCommand = useMemo(() => {
-    const cmd = { action: 'Launch!' }
+    const cmd = { action: 'Run Application!' }
     const tool = build.toLowerCase()
     switch (tool) {
       case 'maven':
@@ -61,8 +61,8 @@ const NextSteps = ({ info, theme = 'light', onClose, onStartOver }) => {
       case 'gradle_kotlin':
       default:
         cmd.cmd = {
-          [OS_NIX]: './gradlew run',
-          [OS_WINDOWS]: 'gradlew run',
+          [OS_NIX]: './gradlew bootRun',
+          [OS_WINDOWS]: 'gradlew bootRun',
         }
         break
     }
@@ -73,7 +73,7 @@ const NextSteps = ({ info, theme = 'light', onClose, onStartOver }) => {
     <Modal
       open={info.show}
       options={{ onCloseEnd: onClose }}
-      header="Your Micronaut app is ready for takeoff."
+      header="Your Grails app is ready for takeoff."
       className={`modal-lg ${theme} next-steps`}
       actions={[
         <Button waves="light" modal="close" flat>
@@ -149,8 +149,8 @@ const NextSteps = ({ info, theme = 'light', onClose, onStartOver }) => {
       <p className="info">
         Once you’ve gotten your new project started, you can continue your
         journey by reviewing our{' '}
-        <a href="https://micronaut.io/documentation.html">documentation</a> and{' '}
-        <a href="https://micronaut.io/learn.html">learning resources</a>
+        <a href="https://grails.org/documentation.html">documentation</a> and{' '}
+        <a href="https://guides.grails.org/index.html">Grails Guides</a>
       </p>
     </Modal>
   )

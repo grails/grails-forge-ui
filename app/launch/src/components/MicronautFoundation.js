@@ -5,8 +5,8 @@ import { ReactComponent as MicronautFoundationLogo } from '../images/micronaut-f
 const MicronautFoundation = ({theme}) => {
   return (
     <a
-      title="Micronaut Foundation"
-      href="https://micronaut.io/foundation"
+      title="Grails Foundation"
+      href="https://grails.org/foundation/index.html"
       target="_blank"
       rel="noreferrer"
     >
