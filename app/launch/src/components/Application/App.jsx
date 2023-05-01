@@ -16,13 +16,13 @@ import {
 } from '../../state/store'
 import { downloadBlob } from '../../utility'
 
+import AltFooter from '../AltFooter'
 import CodePreview from '../CodePreview'
 import Diff from '../Diff'
 import ErrorView, { ErrorViewData } from '../ErrorView'
 import { errorHandlersFactory } from '../ErrorView/ErrorViewData'
 import { FeatureSelectorModal } from '../FeatureSelector'
 import { FeatureSelectedList } from '../FeatureSelector'
-import Footer from '../Footer'
 import GenerateButtons from '../GenerateButtons/GenerateButtons'
 import Header from '../Header'
 import NextSteps from '../NextSteps'
@@ -248,7 +248,7 @@ export function AppContainer({ initialData, errorHandlers }) {
       <div className="container mn-feature-container">
         <FeatureSelectedList theme={theme} />
       </div>
-      <Footer />
+      <AltFooter theme={theme} onToggleTheme={toggleTheme} />
       {nextStepsInfo.show && (
         <NextSteps
           onClose={onCloseNextSteps}
