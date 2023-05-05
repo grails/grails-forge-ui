@@ -4,10 +4,10 @@ const VERSION_FEED_URL = "https://start.grails.org/grails-version-feed.json";
 const { startVersionServer, toLocalUrl } = require("./commands");
 
 /**
- * Start a version server server that serves up
- * Micronaut Starter API (https://github.com/micronaut-projects/micronaut-starter)
+ * Start a version server that serves up
+ * Grails Forge API (https://github.com/grails/grails-forge)
  * you are running locally, which by default runs on port 8080
- * when started via `./gradlew :starter-web-netty:run`
+ * when started via `./gradlew :grails-forge-web-netty:run`
  */
 async function serve() {
   const { data } = await axios.get(VERSION_FEED_URL);
