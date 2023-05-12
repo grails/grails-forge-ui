@@ -29,7 +29,7 @@ export function DefaultIncludedFeatureList() {
                 feature={f}
             />
         ))
-    }, [defaultIncludedFeatures])
+    }, [defaultIncludedFeatures, defaultIncludedFeatureValues])
 
     return (
         <div className="col s12">
