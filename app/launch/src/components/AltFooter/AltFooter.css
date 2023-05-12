@@ -13,7 +13,7 @@ footer {
 }
 
 
-.content {
+footer .content {
   color: #7c7c7c;
   font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial,
     sans-serif;
@@ -48,7 +48,7 @@ footer {
   text-align: left;
 }
 
-.socialmedianav {
+footer .socialmedianav {
   color: #7c7c7c;
   background-color: #ffffff;
   font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial,
@@ -60,7 +60,7 @@ footer {
   float: left;
 }
 
-.parnersnav {
+footer .parnersnav {
   color: #7c7c7c;
   font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial,
     sans-serif;
@@ -70,11 +70,11 @@ footer {
   margin-bottom: 30px;
 }
 
-.links {
+footer .links {
   line-height: 32px;
 }
 
-span {
+footer span {
   color: #7c7c7c;
   background-color: #ffffff;
   font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial,
@@ -84,9 +84,9 @@ span {
   margin-bottom: 10px;
   font-size: 15px;
   line-height: 15px;
-}
+} 
 
-a {
+footer a {
   font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial,
     sans-serif;
   font-size: 16px;
@@ -97,7 +97,7 @@ a {
   margin-right: 0;
 }
 
-nav {
+footer nav {
   background-color: #ffffff;
 }
 

@@ -35,19 +35,18 @@ const AltFooter = () => (
       </a>
       <section class="partnersnav">
         <div class="links">
-          Grails' repositories are hosted by {' '}
+          Grails' repositories are hosted by{' '}
           <a href="https://grails.jfrog.io/">Artifactory</a>
         </div>
         <div class="links">
-          Website hosting provided by {' '}
-          <a href="https://aws.amazon.com/">AWS</a>
+          Website hosting provided by <a href="https://aws.amazon.com/">AWS</a>
         </div>
         <div class="links">
-          YourKit supports Grails with its {' '}
+          YourKit supports Grails with its{' '}
           <a href="https://www.yourkit.com/java/profiler/"> Java Profiler</a>
         </div>
         <div class="links">
-          Grails is Open Source {' '}
+          Grails is Open Source{' '}
           <a href="https://www.apache.org/licenses/LICENSE-2.0.html">
             Apache 2 License
           </a>
