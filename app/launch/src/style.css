@@ -11,7 +11,7 @@ body {
   display: flex;
   position: relative;
   min-height: 100%;
-  --theme-dark: #FFFFFF;
+  --theme-dark: black;
   --theme-dark-secondary: #3a3a3a;
   --theme-dark-card-bg: #161616;
   --theme-dark-card-hover-bg: #252525;
