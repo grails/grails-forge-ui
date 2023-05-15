@@ -168,6 +168,9 @@ body.light .btn-flat {
 button {
   min-height: 3rem;
 }
+button.remove-button {
+  min-height: unset;
+}
 button.light {
   background-color: var(--theme-light-secondary);
   color: #fff;
