@@ -44,10 +44,10 @@ const InfoButton = ({ className = '', theme, style }) => {
       >
         <div className="info-contents">
           <p>
-            Micronaut Launch is a web application that allows you to create
-            Micronaut projects through an interface instead of using the console
+            Grails Forge is a web application that allows you to create
+            Grails projects through an interface instead of using the console
             CLI. You can set the application type, the project name, the
-            language (Java, Kotlin, Groovy), the build tool (Maven, Gradle), the
+            GORM implementation (Hibernate5, MongoDB, Neo4J), the embedded servlet (Tomcat, Jetty, Undertow, or None), the
             Java version and the features you need to develop your software.
           </p>
           <div className="shortcut-legend">

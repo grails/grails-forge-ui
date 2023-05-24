@@ -12,7 +12,7 @@ export default function OtherCommands({ theme, trigger }) {
   const actions = useMemo(() => {
     if (!createCommand) return []
     return [
-      { link: createCommand.toCli(), title: 'Using the Micronaut CLI' },
+      { link: createCommand.toCli(), title: 'Using the Grails CLI' },
       { link: createCommand.toCurl(), title: 'Using cURL' },
     ]
   }, [createCommand])

@@ -4,12 +4,12 @@ import Col from 'react-materialize/lib/Col'
 import Row from 'react-materialize/lib/Row'
 
 import StarterFormApplicationType from './StarterFormApplicationType'
-import StarterFormBuild from './StarterFormBuild'
 import StarterFormGorm from "./StarterFormGorm";
 import StarterFormJavaVersion from './StarterFormJavaVersion'
 import StarterFormMicronautVersion from './StarterFormMicronautVersion'
 import StarterFormName from './StarterFormName'
 import StarterFormPackage from './StarterFormPackage'
+import StarterFormServlet from './StarterFormServlet'
 import StarterFormTestFramework from './StarterFormTestFramework'
 
 const StarterForm = ({ onError }) => {
@@ -34,7 +34,7 @@ const StarterForm = ({ onError }) => {
         <StarterFormGorm />
       </Col>
       <Col m={3} s={12} className="mn-radio">
-        <StarterFormBuild />
+        <StarterFormServlet />
       </Col>
       <Col m={3} s={12} className="mn-radio">
         <StarterFormTestFramework />

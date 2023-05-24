@@ -34,7 +34,7 @@ import CopyToClipboard from '../CopyToClipboard'
 import TooltipButton, { TooltipWrapper } from '../TooltipButton'
 
 const CodePreview = ({ theme = 'light', disabled, onLoad, onClose }, ref) => {
-  const { lang, build } = useStarterForm()
+  const { gorm, servlet } = useStarterForm()
   const sharable = useSharableLink()
 
   const [showing, setShowing] = useState(null)
@@ -194,10 +194,9 @@ const CodePreview = ({ theme = 'light', disabled, onLoad, onClose }, ref) => {
       <Modal
         open={open}
         header={
-          'Previewing a ' +
-          capitalize(lang) +
+          'Previewing a Grails application using ' +
           ' application using ' +
-          capitalize(build)
+          capitalize(servlet) + ', ' + capitalize(gorm)
         }
         className={'preview ' + theme}
         fixedFooter

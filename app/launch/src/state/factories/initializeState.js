@@ -8,11 +8,11 @@ import { StarterSDK } from './StarterSDK'
 export const INITIAL_FORM_DATA_STORAGE_KEY = 'INITIAL_FORM_DATA'
 
 const initialForm = (initialData) => {
-  const { javaVersion, lang, build, test, features } = initialData
+  const { javaVersion, gorm, servlet, test, features } = initialData
   const parsed = {
     javaVersion: typeof javaVersion === 'string' ? javaVersion : '', // This is specifically "" to work with the SelectOption component
-    lang: typeof lang === 'string' ? lang : '',
-    build: typeof build === 'string' ? build : '',
+    servlet: typeof servlet === 'string' ? servlet : '',
+    gorm: typeof gorm === 'string' ? gorm : '',
     test: typeof test === 'string' ? test : '',
     features: StarterSDK.reconstructFeatures(features),
     [ACTIVITY_KEY]: initialData[ACTIVITY_KEY],

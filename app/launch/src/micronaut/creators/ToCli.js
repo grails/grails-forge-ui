@@ -16,13 +16,13 @@ function buildFeaturesArgs(features) {
 
 export default class ToCli {
   static make(createCommand) {
-    const { lang, build, test, javaVersion } = createCommand
+    const { gorm, servlet, test, javaVersion } = createCommand
     const jdk = javaVersion ? javaVersion.replace('JDK_', '') : null
     const command = deriveCommand(createCommand.type)
     const applicationName = createCommand.applicationName()
 
     const features = buildFeaturesArgs(createCommand.features)
-    const opts = { build, jdk, lang, test, features }
+    const opts = { servlet, jdk, gorm, test, features }
     const args = Object.keys(opts).reduce((acc, key) => {
       const value = opts[key]
       if (value) {
@@ -31,6 +31,6 @@ export default class ToCli {
       return acc
     }, [])
 
-    return ['mn', command, ...args, applicationName].join(' ').toLowerCase()
+    return ['grails', command, ...args, applicationName].join(' ').toLowerCase()
   }
 }

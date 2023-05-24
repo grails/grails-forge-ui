@@ -72,7 +72,7 @@ npm run start:local
 
 ## Running a Grails Forge API locally to dev against
 
-If you want to run against a version of the starter api (Micronaut Starter Api)[https://github.com/grails/grails-forge]
+If you want to run against a version of the starter api (Grails Starter Api)[https://github.com/grails/grails-forge]
 
 Outside of this project pull down that repo
 
