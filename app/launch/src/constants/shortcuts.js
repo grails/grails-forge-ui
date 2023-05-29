@@ -7,6 +7,7 @@ import {
   KEY_CODE_J,
   KEY_CODE_L,
   KEY_CODE_P,
+  KEY_CODE_S,
   KEY_CODE_QUESTION,
   KEY_CODE_SHIFT,
   KEY_CODE_T,
@@ -40,7 +41,7 @@ export const GENERATE_SHORTCUT = {
 }
 
 export const NEXT_VERSION_SHORTCUT = {
-  label: 'Toggle to the Next Micronaut Version',
+  label: 'Toggle to the Next Grails Version',
   textValue: SHIFT_TEXT + ' + V',
   keys: [KEY_CODE_SHIFT, KEY_CODE_V],
 }
@@ -73,6 +74,12 @@ export const NEXT_BUILD_SHORTCUT = {
   label: 'Toggle to the Next Build',
   textValue: SHIFT_TEXT + ' + B',
   keys: [KEY_CODE_SHIFT, KEY_CODE_B],
+}
+
+export const NEXT_SERVLET_SHORTCUT = {
+  label: 'Toggle to the Servlet Build',
+  textValue: SHIFT_TEXT + ' + S',
+  keys: [KEY_CODE_SHIFT, KEY_CODE_S],
 }
 
 export const NEXT_TEST_SHORTCUT = {

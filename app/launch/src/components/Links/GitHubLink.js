@@ -7,9 +7,9 @@ export const GitHubLink = ({ className, theme }) => {
 
   return (
     <a
-      href="https://github.com/micronaut-projects/micronaut-starter"
+      href="https://github.com/grails/grails-forge"
       aria-label="Grails Application Forge Github Repo"
-      title="Micronaut Application Forge Github Repo"
+      title="Grails Application Forge Github Repo"
       target="_blank"
       rel="noopener noreferrer"
       className={className}

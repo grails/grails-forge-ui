@@ -2,11 +2,11 @@ import ToUrl from './creators/ToUrl'
 
 export class FeatureCommand {
   constructor(
-    { javaVersion, build, gorm, test },
+    { javaVersion, servlet, gorm, test },
     featuresUrl = ''
   ) {
     this.javaVersion = javaVersion
-    this.build = build
+    this.servlet = servlet
     this.gorm = gorm
     this.test = test
     this.baseUrl = featuresUrl

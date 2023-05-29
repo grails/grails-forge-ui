@@ -126,6 +126,11 @@ export const buildState = atom({
   default: defaultValueSelectorFactory('build'),
 })
 
+export const servletState = atom({
+  key: 'SERVLET_STATE',
+  default: defaultValueSelectorFactory('servlet'),
+})
+
 export const gormState = atom({
   key: 'GORM_STATE',
   default: defaultValueSelectorFactory('gorm'),
@@ -172,7 +177,7 @@ export const starterFormState = selector({
     const type = get(appTypeState)
     const name = get(nameState)
     const pkg = get(packageState)
-    const build = get(buildState)
+    const servlet = get(servletState)
     const gorm = get(gormState)
     const test = get(testState)
     const javaVersion = get(javaVersionState)
@@ -187,7 +192,7 @@ export const starterFormState = selector({
       package: pkg,
       javaVersion,
       gorm,
-      build,
+      servlet,
       test,
       features,
     })
@@ -392,6 +397,13 @@ export const useBuild = () => {
   return [value, setter, select]
 }
 
+export const useServlet = () => {
+  const [value, setter] = useRecoilState(servletState)
+  const select = useSelectOptionsForType('servlet')
+  useDerivedDefultsEffect(select, setter)
+  return [value, setter, select]
+}
+
 export const useGorm = () => {
   const [value, setter] = useRecoilState(gormState)
   const select = useSelectOptionsForType('gorm')
@@ -431,7 +443,7 @@ export const useResetStarterForm = () => {
     set(packageState, resets.package)
 
     set(appTypeState, options.type.defaultOption.value)
-    set(buildState, options.build.defaultOption.value)
+    set(servletState, options.servlet.defaultOption.value)
     set(gormState, options.gorm.defaultOption.value)
     set(testState, options.test.defaultOption.value)
     set(javaVersionState, options.jdkVersion.defaultOption.value)

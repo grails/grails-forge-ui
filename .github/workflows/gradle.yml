@@ -38,4 +38,3 @@ jobs:
         run: |
           cd ./app/launch/
           npm test -- --watchAll=false
-          npm run start:local

@@ -12,8 +12,8 @@ const TestView = () => {
     <>
       <div className="type">{`${form.type}`}</div>
       <div className="test">{`${form.test}`}</div>
-      <div className="build">{`${form.build}`}</div>
-      <div className="lang">{`${form.lang}`}</div>
+      <div className="servlet">{`${form.servlet}`}</div>
+      <div className="gorm">{`${form.gorm}`}</div>
       <div className="javaVersion">{`${form.javaVersion}`}</div>
       <div className="name">{`${form.name}`}</div>
       <div className="package">{`${form.package}`}</div>
@@ -49,12 +49,12 @@ TEST_DATA.forEach(({ initialData }) => {
       `${initialData.test || ''}`,
     ])
 
-    expect(testInstance.findByProps({ className: 'build' }).children).toEqual([
-      `${initialData.build || ''}`,
+    expect(testInstance.findByProps({ className: 'servlet' }).children).toEqual([
+      `${initialData.servlet || ''}`,
     ])
 
-    expect(testInstance.findByProps({ className: 'lang' }).children).toEqual([
-      `${initialData.lang || ''}`,
+    expect(testInstance.findByProps({ className: 'gorm' }).children).toEqual([
+      `${initialData.gorm || ''}`,
     ])
 
     expect(

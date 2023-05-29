@@ -25,7 +25,7 @@ import { capitalize } from '../utility'
 import TooltipButton from './TooltipButton'
 
 const Diff = ({ theme = 'light', disabled, onLoad, onClose }, ref) => {
-  const { lang, build } = useStarterForm()
+  const { gorm, servlet } = useStarterForm()
 
   const [diff, setDiff] = useState(null)
   useKeyboardShortcuts(DIFF_SHORTCUT.keys, onLoad, disabled)
@@ -67,10 +67,8 @@ const Diff = ({ theme = 'light', disabled, onLoad, onClose }, ref) => {
 
       <Modal
         header={
-          'Showing Diff for a ' +
-          capitalize(lang) +
-          ' application using ' +
-          capitalize(build)
+          'Showing Diff for a Grails application using ' +
+            capitalize(gorm) + ', ' + capitalize(servlet)
         }
         className={'diff ' + theme}
         fixedFooter
