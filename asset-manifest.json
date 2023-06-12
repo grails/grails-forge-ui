@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/grails-forge-ui/static/css/main.65e5874c.chunk.css",
-    "main.js": "/grails-forge-ui/static/js/main.1d4efd22.chunk.js",
-    "main.js.map": "/grails-forge-ui/static/js/main.1d4efd22.chunk.js.map",
+    "main.js": "/grails-forge-ui/static/js/main.7c71da8a.chunk.js",
+    "main.js.map": "/grails-forge-ui/static/js/main.7c71da8a.chunk.js.map",
     "runtime-main.js": "/grails-forge-ui/static/js/runtime-main.90931f1a.js",
     "runtime-main.js.map": "/grails-forge-ui/static/js/runtime-main.90931f1a.js.map",
     "static/js/2.ac338313.chunk.js": "/grails-forge-ui/static/js/2.ac338313.chunk.js",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.90931f1a.js",
     "static/js/2.ac338313.chunk.js",
     "static/css/main.65e5874c.chunk.css",
-    "static/js/main.1d4efd22.chunk.js"
+    "static/js/main.7c71da8a.chunk.js"
   ]
 }
