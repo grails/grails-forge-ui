@@ -23,10 +23,12 @@ const TestView = () => {
 
 const TEST_DATA = [
   { initialData: {}, hasError: false },
-  { initialData: { javaVersion: 'JDK_12' }, hasError: false },
+  { initialData: { javaVersion: 'JDK_11' }, hasError: false },
+  { initialData: { test: 'SPOCK' }, hasError: false },
   { initialData: { test: 'JUNIT' }, hasError: false },
-  { initialData: { lang: 'Java' }, hasError: false },
-  { initialData: { test: 'KOTEST' }, hasError: false },
+  { initialData: { gorm: 'gorm-hibernate5' }, hasError: false },
+  { initialData: { servlet: 'spring-boot-starter-tomcat' }, hasError: false },
+  { initialData: { servlet: 'NONE' }, hasError: false },
   { initialData: { package: 'com.pretend' }, hasError: false },
   { initialData: { name: 'pretendo' }, hasError: false },
 ]

@@ -12,7 +12,7 @@ import {
 } from '../../../state/store'
 
 const MockTypes = {
-  DEFAULT: { features: ['a', 'b', 'c'] },
+  WEB: { features: ['a', 'b', 'c'] },
 }
 const MockSdk = {
   baseUrl: 'http://pretend.com',
@@ -50,7 +50,7 @@ const TestView = ({ sdk, applicationType, onError }) => {
 }
 
 const TEST_DATA = [
-  { initialData: { type: 'DEFAULT' }, hasError: false },
+  { initialData: { type: 'WEB' }, hasError: false },
   { initialData: { type: 'BOOM' }, hasError: true },
 ]
 

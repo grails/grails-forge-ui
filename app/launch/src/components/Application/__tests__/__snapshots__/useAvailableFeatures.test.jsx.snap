@@ -8,7 +8,7 @@ exports[`Initial Form Data with "BOOM" 1`] = `
 </div>
 `;
 
-exports[`Initial Form Data with "DEFAULT" 1`] = `
+exports[`Initial Form Data with "WEB" 1`] = `
 <div
   className="test"
 >

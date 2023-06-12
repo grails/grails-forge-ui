@@ -3,6 +3,6 @@ export function formResets(fallbacks = {}) {
   return {
     name: typeof name === 'string' ? name : 'demo',
     package: typeof pkg === 'string' ? pkg : 'com.example',
-    type: typeof type === 'string' ? type : 'DEFAULT',
+    type: typeof type === 'string' ? type : 'WEB',
   }
 }

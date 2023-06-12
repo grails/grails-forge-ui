@@ -1,7 +1,7 @@
 function deriveCommand(type) {
   switch (type) {
-    case 'DEFAULT':
-      return 'create-app'
+    case 'WEB':
+      return 'create-webapp'
     default:
       return `create-${type}-app`.toLowerCase()
   }

@@ -45,7 +45,7 @@ it(`Test Duplicate Initialization Doesn't Re-Run Initial Routing`, async () => {
     root = create(
       <TestApp
         sdk={sdk}
-        initialData={{ activity: 'preview', type: 'DEFAULT' }}
+        initialData={{ activity: 'preview', type: 'WEB' }}
         routingHandlers={routingHandlers}
       />
     )
@@ -56,7 +56,7 @@ it(`Test Duplicate Initialization Doesn't Re-Run Initial Routing`, async () => {
     root.update(
       <TestApp
         sdk={sdk}
-        initialData={{ activity: 'diff', type: 'DEFAULT' }}
+        initialData={{ activity: 'diff', type: 'WEB' }}
         routingHandlers={routingHandlers}
       />
     )
@@ -66,14 +66,14 @@ it(`Test Duplicate Initialization Doesn't Re-Run Initial Routing`, async () => {
 })
 
 const TEST_DATA = [
-  { initialData: { type: 'DEFAULT', activity: 'diff' }, hasError: false },
-  { initialData: { type: 'DEFAULT', activity: 'preview' }, hasError: false },
+  { initialData: { type: 'WEB', activity: 'diff' }, hasError: false },
+  { initialData: { type: 'WEB', activity: 'preview' }, hasError: false },
   {
-    initialData: { type: 'DEFAULT', activity: 'preview', showing: 'README.md' },
+    initialData: { type: 'WEB', activity: 'preview', showing: 'README.md' },
     hasError: false,
   },
-  { initialData: { type: 'DEFAULT', activity: 'create' }, hasError: false },
-  { initialData: { type: 'DEFAULT', activity: 'notHandled' }, hasError: true },
+  { initialData: { type: 'WEB', activity: 'create' }, hasError: false },
+  { initialData: { type: 'WEB', activity: 'notHandled' }, hasError: true },
   { initialData: { activity: 'create' }, hasError: true },
   {
     initialData: { build: 'ANY', activity: 'diff' },
