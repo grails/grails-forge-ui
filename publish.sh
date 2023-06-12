@@ -33,7 +33,7 @@ git clone https://${GH_TOKEN}@github.com/${GITHUB_SLUG}.git -b gh-pages gh-pages
 cd gh-pages
 cp -r ../build/launch/* .
 if git diff --quiet; then
-  echo "No changes in Grails Forge UI
+  echo "No changes in Grails Forge UI"
 else
   git add -A
   git commit -a -m "Updating $GITHUB_SLUG gh-pages branch for Github Actions run:$GITHUB_RUN_ID"
