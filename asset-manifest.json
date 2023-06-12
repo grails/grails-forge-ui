@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.65e5874c.chunk.css",
-    "main.js": "/static/js/main.95d5ddcf.chunk.js",
-    "main.js.map": "/static/js/main.95d5ddcf.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.be265e1d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.be265e1d.js.map",
-    "static/js/2.ac338313.chunk.js": "/static/js/2.ac338313.chunk.js",
-    "static/js/2.ac338313.chunk.js.map": "/static/js/2.ac338313.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.65e5874c.chunk.css.map": "/static/css/main.65e5874c.chunk.css.map",
-    "static/js/2.ac338313.chunk.js.LICENSE.txt": "/static/js/2.ac338313.chunk.js.LICENSE.txt",
-    "static/media/github.d85d78b5.svg": "/static/media/github.d85d78b5.svg",
-    "static/media/grails-forge.4609c6fa.svg": "/static/media/grails-forge.4609c6fa.svg",
-    "static/media/linkedin.56394970.svg": "/static/media/linkedin.56394970.svg",
-    "static/media/micronaut-launch.1bcb5fcd.svg": "/static/media/micronaut-launch.1bcb5fcd.svg",
-    "static/media/micronaut-white-icon.1c3164ce.png": "/static/media/micronaut-white-icon.1c3164ce.png",
-    "static/media/oci_home_to_grails.43f2490c.svg": "/static/media/oci_home_to_grails.43f2490c.svg",
-    "static/media/slack.2388fb1e.svg": "/static/media/slack.2388fb1e.svg",
-    "static/media/twitter.f4f27db5.svg": "/static/media/twitter.f4f27db5.svg",
-    "static/media/youtube.7577ea4c.svg": "/static/media/youtube.7577ea4c.svg"
+    "main.css": "/grails-forge-ui/static/css/main.65e5874c.chunk.css",
+    "main.js": "/grails-forge-ui/static/js/main.db6ce7b3.chunk.js",
+    "main.js.map": "/grails-forge-ui/static/js/main.db6ce7b3.chunk.js.map",
+    "runtime-main.js": "/grails-forge-ui/static/js/runtime-main.90931f1a.js",
+    "runtime-main.js.map": "/grails-forge-ui/static/js/runtime-main.90931f1a.js.map",
+    "static/js/2.ac338313.chunk.js": "/grails-forge-ui/static/js/2.ac338313.chunk.js",
+    "static/js/2.ac338313.chunk.js.map": "/grails-forge-ui/static/js/2.ac338313.chunk.js.map",
+    "index.html": "/grails-forge-ui/index.html",
+    "static/css/main.65e5874c.chunk.css.map": "/grails-forge-ui/static/css/main.65e5874c.chunk.css.map",
+    "static/js/2.ac338313.chunk.js.LICENSE.txt": "/grails-forge-ui/static/js/2.ac338313.chunk.js.LICENSE.txt",
+    "static/media/github.d85d78b5.svg": "/grails-forge-ui/static/media/github.d85d78b5.svg",
+    "static/media/grails-forge.4609c6fa.svg": "/grails-forge-ui/static/media/grails-forge.4609c6fa.svg",
+    "static/media/linkedin.56394970.svg": "/grails-forge-ui/static/media/linkedin.56394970.svg",
+    "static/media/micronaut-launch.1bcb5fcd.svg": "/grails-forge-ui/static/media/micronaut-launch.1bcb5fcd.svg",
+    "static/media/micronaut-white-icon.1c3164ce.png": "/grails-forge-ui/static/media/micronaut-white-icon.1c3164ce.png",
+    "static/media/oci_home_to_grails.43f2490c.svg": "/grails-forge-ui/static/media/oci_home_to_grails.43f2490c.svg",
+    "static/media/slack.2388fb1e.svg": "/grails-forge-ui/static/media/slack.2388fb1e.svg",
+    "static/media/twitter.f4f27db5.svg": "/grails-forge-ui/static/media/twitter.f4f27db5.svg",
+    "static/media/youtube.7577ea4c.svg": "/grails-forge-ui/static/media/youtube.7577ea4c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.be265e1d.js",
+    "static/js/runtime-main.90931f1a.js",
     "static/js/2.ac338313.chunk.js",
     "static/css/main.65e5874c.chunk.css",
-    "static/js/main.95d5ddcf.chunk.js"
+    "static/js/main.db6ce7b3.chunk.js"
   ]
 }
