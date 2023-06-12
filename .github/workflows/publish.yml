@@ -24,5 +24,5 @@ jobs:
       - name: Publish Grails Forge UI
         run: ./publish.sh
         env:
-          GITHUB_SLUG: micronaut-projects/micronaut-starter-ui
+          GITHUB_SLUG: grails/grails-forge-ui
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
