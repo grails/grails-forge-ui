@@ -4,6 +4,8 @@
 
 This project builds the [Grails Application Forge UI](https://start.grails.org).
 
+This is also served to Github Pages [https://grails.github.io/grails-forge-ui/](https://grails.github.io/grails-forge-ui/).
+
 ## To build the site for CI run:
 
 ```bash
