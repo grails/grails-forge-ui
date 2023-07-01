@@ -47,14 +47,14 @@ const NextSteps = ({ info, theme = 'light', onClose, onStartOver }) => {
     }
   }, [name])
 
-  const launchCommand = (() => {
+  const launchCommand = useMemo(() => {
     const cmd = { action: 'Run Application!' }
     cmd.cmd = {
       [OS_NIX]: './gradlew bootRun',
       [OS_WINDOWS]: 'gradlew bootRun',
     }
     return cmd
-  })
+  }, [])
 
   return (
     <Modal
