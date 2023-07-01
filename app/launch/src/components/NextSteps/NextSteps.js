@@ -17,7 +17,7 @@ const sortedOsOpts = osOpts.sort((a, b) => {
 })
 
 const NextSteps = ({ info, theme = 'light', onClose, onStartOver }) => {
-  const { name, build } = useStarterForm()
+  const { name } = useStarterForm()
   const { htmlUrl, cloneUrl } = info
   const [os, setOs] = useState(guessedOs)
 
@@ -47,27 +47,14 @@ const NextSteps = ({ info, theme = 'light', onClose, onStartOver }) => {
     }
   }, [name])
 
-  const launchCommand = useMemo(() => {
+  const launchCommand = (() => {
     const cmd = { action: 'Run Application!' }
-    const tool = build.toLowerCase()
-    switch (tool) {
-      case 'maven':
-        cmd.cmd = {
-          [OS_NIX]: `./mvnw mn:run`,
-          [OS_WINDOWS]: 'mvnw mn:run',
-        }
-        break
-      case 'gradle':
-      case 'gradle_kotlin':
-      default:
-        cmd.cmd = {
-          [OS_NIX]: './gradlew bootRun',
-          [OS_WINDOWS]: 'gradlew bootRun',
-        }
-        break
+    cmd.cmd = {
+      [OS_NIX]: './gradlew bootRun',
+      [OS_WINDOWS]: 'gradlew bootRun',
     }
     return cmd
-  }, [build])
+  })
 
   return (
     <Modal

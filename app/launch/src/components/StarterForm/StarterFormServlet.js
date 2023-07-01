@@ -1,4 +1,4 @@
-import { NEXT_BUILD_SHORTCUT } from '../../constants/shortcuts'
+import { NEXT_SERVLET_SHORTCUT } from '../../constants/shortcuts'
 import useKeyboardShortcuts from '../../hooks/useKeyboardShortcuts'
 import { useServlet } from '../../state/store'
 import RadioGroup from '../RadioGroup'
@@ -8,13 +8,8 @@ export default function StarterFormServlet() {
   const [value, setter, select] = useServlet()
   const handleChange = (event) => setter(event.target.value)
 
-  const next = useOptHandler(
-    'servlet',
-    value,
-    select?.options ?? [],
-    handleChange
-  )
-  useKeyboardShortcuts(NEXT_BUILD_SHORTCUT.keys, next)
+  const next = useOptHandler('servlet', value, select?.options ?? [], handleChange)
+  useKeyboardShortcuts(NEXT_SERVLET_SHORTCUT.keys, next)
 
   return (
     <RadioGroup

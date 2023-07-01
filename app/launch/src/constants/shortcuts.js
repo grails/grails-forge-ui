@@ -1,11 +1,9 @@
 import {
   KEY_CODE_A,
-  KEY_CODE_B,
   KEY_CODE_D,
   KEY_CODE_ENTER,
   KEY_CODE_G,
   KEY_CODE_J,
-  KEY_CODE_L,
   KEY_CODE_P,
   KEY_CODE_S,
   KEY_CODE_QUESTION,
@@ -58,22 +56,10 @@ export const NEXT_JDK_SHORTCUT = {
   keys: [KEY_CODE_SHIFT, KEY_CODE_J],
 }
 
-export const NEXT_LANG_SHORTCUT = {
-  label: 'Toggle to the Next Language',
-  textValue: SHIFT_TEXT + ' + L',
-  keys: [KEY_CODE_SHIFT, KEY_CODE_L],
-}
-
 export const NEXT_GORM_SHORTCUT = {
   label: 'Toggle to the Next GORM',
   textValue: SHIFT_TEXT + ' + G',
   keys: [KEY_CODE_SHIFT, KEY_CODE_G],
-}
-
-export const NEXT_BUILD_SHORTCUT = {
-  label: 'Toggle to the Next Build',
-  textValue: SHIFT_TEXT + ' + B',
-  keys: [KEY_CODE_SHIFT, KEY_CODE_B],
 }
 
 export const NEXT_SERVLET_SHORTCUT = {
@@ -94,9 +80,9 @@ export const SHORTCUT_REGISTRY = [
   PREVIEW_SHORTCUT,
   DIFF_SHORTCUT,
   NEXT_VERSION_SHORTCUT,
+  NEXT_GORM_SHORTCUT,
+  NEXT_SERVLET_SHORTCUT,
   NEXT_APP_TYPE_SHORTCUT,
   NEXT_JDK_SHORTCUT,
-  NEXT_LANG_SHORTCUT,
-  NEXT_BUILD_SHORTCUT,
   NEXT_TEST_SHORTCUT,
 ]
