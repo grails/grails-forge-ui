@@ -1,6 +1,6 @@
 import { parseQuery } from './url'
 
-export const BASE_PATH = 'launch'
+export const BASE_PATH = 'grails-forge-ui'
 export const ACTIVITY_KEY = 'activity'
 export const VERSION_KEY = 'version'
 export const FEATURES_KEY = 'features'
