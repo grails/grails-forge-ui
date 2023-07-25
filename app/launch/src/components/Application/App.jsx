@@ -197,7 +197,7 @@ export function AppContainer({ initialData, errorHandlers }) {
         <div className="container">
           <Header theme={theme} onToggleTheme={toggleTheme} />
 
-          <div className="container">
+          <div className="container-fluid">
             <div className="mn-container">
             <form onSubmit={onGenerateProject} autoComplete="off">
               <StarterForm
