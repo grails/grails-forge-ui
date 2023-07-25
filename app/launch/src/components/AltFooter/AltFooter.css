@@ -12,7 +12,6 @@ footer {
 
 }
 
-
 footer .content {
   color: #7c7c7c;
   font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial,
@@ -21,7 +20,7 @@ footer .content {
   margin: 0 auto;
   z-index: 2;
   overflow: auto;
-  width: 100%;
+  width: 95%;
   max-width: 1141px;
   background-color: #ffffff;
   display: flex;
@@ -38,7 +37,6 @@ footer .content {
   font-size: 16px;
   margin-top: 0;
   margin-left: 0;
-  overflow: auto;
   margin-bottom: 30px;
   float: left;
   text-align: left !important;
@@ -73,6 +71,7 @@ footer .parnersnav {
 
 footer .links {
   line-height: 32px;
+  text-align: right;
 }
 
 footer span {
