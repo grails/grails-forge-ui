@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/grails-forge-ui/static/css/main.50da7550.chunk.css",
+    "main.css": "/grails-forge-ui/static/css/main.75d37087.chunk.css",
     "main.js": "/grails-forge-ui/static/js/main.699eda85.chunk.js",
     "main.js.map": "/grails-forge-ui/static/js/main.699eda85.chunk.js.map",
     "runtime-main.js": "/grails-forge-ui/static/js/runtime-main.90931f1a.js",
@@ -8,7 +8,7 @@
     "static/js/2.cadb4df9.chunk.js": "/grails-forge-ui/static/js/2.cadb4df9.chunk.js",
     "static/js/2.cadb4df9.chunk.js.map": "/grails-forge-ui/static/js/2.cadb4df9.chunk.js.map",
     "index.html": "/grails-forge-ui/index.html",
-    "static/css/main.50da7550.chunk.css.map": "/grails-forge-ui/static/css/main.50da7550.chunk.css.map",
+    "static/css/main.75d37087.chunk.css.map": "/grails-forge-ui/static/css/main.75d37087.chunk.css.map",
     "static/js/2.cadb4df9.chunk.js.LICENSE.txt": "/grails-forge-ui/static/js/2.cadb4df9.chunk.js.LICENSE.txt",
     "static/media/grails-forge.4609c6fa.svg": "/grails-forge-ui/static/media/grails-forge.4609c6fa.svg",
     "static/media/micronaut-launch.1bcb5fcd.svg": "/grails-forge-ui/static/media/micronaut-launch.1bcb5fcd.svg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.90931f1a.js",
     "static/js/2.cadb4df9.chunk.js",
-    "static/css/main.50da7550.chunk.css",
+    "static/css/main.75d37087.chunk.css",
     "static/js/main.699eda85.chunk.js"
   ]
 }
