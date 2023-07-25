@@ -1,11 +1,4 @@
-import Github from '../../images/github.svg'
-import Linkedin from '../../images/linkedin.svg'
-import OciHomeToGrails from '../../images/oci_home_to_grails.svg'
-import Slack from '../../images/slack.svg'
-import Twitter from '../../images/twitter.svg'
-import Youtube from '../../images/youtube.svg'
-
-const AltFooter = () => (
+    const AltFooter = () => (
   <footer>
     <div class="content">
         <div class="ocihometograils">
