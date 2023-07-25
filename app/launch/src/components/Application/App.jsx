@@ -194,10 +194,10 @@ export function AppContainer({ initialData, errorHandlers }) {
   return (
     <Fragment>
       <div id="mn-main-container" className="mn-main-container sticky">
-        <div className="container">
+        <div className="container-fluid">
           <Header theme={theme} onToggleTheme={toggleTheme} />
 
-          <div className="container-fluid">
+          <div className="container">
             <div className="mn-container">
             <form onSubmit={onGenerateProject} autoComplete="off">
               <StarterForm
