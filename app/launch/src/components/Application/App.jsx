@@ -197,7 +197,8 @@ export function AppContainer({ initialData, errorHandlers }) {
         <div className="container">
           <Header theme={theme} onToggleTheme={toggleTheme} />
 
-          <div className="mn-container">
+          <div className="container">
+            <div className="mn-container">
             <form onSubmit={onGenerateProject} autoComplete="off">
               <StarterForm
                 theme={theme}
@@ -240,13 +241,18 @@ export function AppContainer({ initialData, errorHandlers }) {
               {loading && <ProgressBar />}
             </div>
           </div>
+          </div>
         </div>
       </div>
-      <div className="container mn-feature-container">
+      <div className="container">
+        <div className="mn-feature-container">
         <DefaultIncludedFeatureList theme={theme} />
       </div>
-      <div className="container mn-feature-container">
+      </div>
+      <div className="container">
+        <div className="mn-feature-container">
         <FeatureSelectedList theme={theme} />
+      </div>
       </div>
       <AltFooter theme={theme} onToggleTheme={toggleTheme} />
       {nextStepsInfo.show && (
