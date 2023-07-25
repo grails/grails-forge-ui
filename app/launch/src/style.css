@@ -183,7 +183,7 @@ button.dark {
 
 button.light:hover,
 button.light:focus {
-  background-color: #000000;
+  background-color: #255AA8FF;
 }
 
 button.dark:hover,
@@ -194,7 +194,7 @@ button.dark:focus {
 /*Theme Radio*/
 body.light [type='radio']:checked + span:after,
 body.light [type='radio'].with-gap:checked + span:after {
-  background-color: #000;
+  background-color: #255AA8FF;
 }
 
 body.dark [type='radio']:checked + span:after,
@@ -205,7 +205,7 @@ body.dark [type='radio'].with-gap:checked + span:after {
 body.light [type='radio']:checked + span:after,
 body.light [type='radio'].with-gap:checked + span:before,
 body.light [type='radio'].with-gap:checked + span:after {
-  border: 2px solid #000;
+  border: 2px solid #255AA8FF;
 }
 
 body.dark [type='radio']:checked + span:after,
