@@ -1,6 +1,6 @@
 import { parseQuery } from './url'
 
-export const BASE_PATH = '/'
+export const BASE_PATH = ''
 export const ACTIVITY_KEY = 'activity'
 export const VERSION_KEY = 'version'
 export const FEATURES_KEY = 'features'
