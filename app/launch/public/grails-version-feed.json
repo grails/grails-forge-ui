@@ -2,12 +2,12 @@
     "versions": [
         {
             "key": "RELEASE",
-            "baseUrl": "https://latest.grails.org",
+            "baseUrl": "https://grailsforge-latest-cjmq3uyfcq-uc.a.run.app",
             "order": 0
         },
         {
             "key": "SNAPSHOT",
-            "baseUrl": "https://snapshot.grails.org",
+            "baseUrl": "https://grailsforge-snapshot-cjmq3uyfcq-uc.a.run.app",
             "order": 1                    
         },
         {
