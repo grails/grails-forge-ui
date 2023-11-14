@@ -14,7 +14,7 @@ jobs:
         java: ['11']
         node-version: [18.x]
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v3
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
