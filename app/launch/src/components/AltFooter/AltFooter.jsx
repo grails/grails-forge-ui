@@ -3,7 +3,7 @@
     <div class="content">
         <div class="ocihometograils">
             <a href="https://grails.org/foundation/index.html"><img class="" src="https://grails.org/images/foundation-logo-horizontal-orange.svg" alt="Grails Foundation" width="300px" /></a>
-            <span>© 2023 Grails Foundation. All rights reserved.</span>
+            <span>© 2024 Grails Foundation. All rights reserved.</span>
         </div>
 
         <a href="mailto:info@grails.org"><img class="" src="https://grails.org/images/email.svg" alt="Email Icon" /></a>
