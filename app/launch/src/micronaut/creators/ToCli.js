@@ -3,7 +3,7 @@ function deriveCommand(type) {
     case 'WEB':
       return 'create-webapp'
     default:
-      return `create-${type}-app`.toLowerCase()
+      return `create-${type}`.toLowerCase()
   }
 }
 
