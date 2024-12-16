@@ -19,6 +19,11 @@
             "key": "PREV",
             "baseUrl": "https://prev.grails.org",
             "order": 3
+        },
+        {
+            "key": "PREV-SNAPSHOT",
+            "baseUrl": "https://prev-snapshot.grails.org",
+            "order": 4
         }
     ]
 }
