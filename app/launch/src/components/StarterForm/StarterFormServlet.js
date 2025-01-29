@@ -14,7 +14,7 @@ export default function StarterFormServlet() {
   return (
     <RadioGroup
       tabIndex={1}
-      label="Embedded Servlet"
+      label="Embedded Servlet Container"
       id="servlet"
       name="servlet"
       value={value}
