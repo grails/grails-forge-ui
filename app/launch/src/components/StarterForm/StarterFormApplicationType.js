@@ -15,7 +15,7 @@ export default function StarterFormApplicationType() {
     <Select
       tabIndex={1}
       className="mn-input"
-      label="Application Type"
+      label="Project Type"
       name="type"
       value={value}
       onChange={handleChange}

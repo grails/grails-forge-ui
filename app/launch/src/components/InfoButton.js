@@ -46,9 +46,9 @@ const InfoButton = ({ className = '', theme, style }) => {
           <p>
             Grails Forge is a web application that allows you to create
             Grails projects through an interface instead of using the console
-            CLI. You can set the application type, the project name, the
-            GORM implementation (Hibernate5, MongoDB, Neo4J), the embedded servlet (Tomcat, Jetty, Undertow, or None), the
-            Java version and the features you need to develop your software.
+            CLI. You can set the project type, the project name, the
+            GORM implementation (Hibernate5, MongoDB, Neo4J), the embedded servlet container (Tomcat, Jetty, Undertow, or None),
+            the Java version and the features you need to develop your software.
           </p>
           <div className="shortcut-legend">
             <label>

@@ -39,37 +39,37 @@ export const GENERATE_SHORTCUT = {
 }
 
 export const NEXT_VERSION_SHORTCUT = {
-  label: 'Toggle to the Next Grails Version',
+  label: 'Toggle to the next Grails Version',
   textValue: SHIFT_TEXT + ' + V',
   keys: [KEY_CODE_SHIFT, KEY_CODE_V],
 }
 
 export const NEXT_APP_TYPE_SHORTCUT = {
-  label: 'Toggle to the Next Application Type',
+  label: 'Toggle to the next Project Type',
   textValue: SHIFT_TEXT + ' + A',
   keys: [KEY_CODE_SHIFT, KEY_CODE_A],
 }
 
 export const NEXT_JDK_SHORTCUT = {
-  label: 'Toggle to the Next Java Version',
+  label: 'Toggle to the next Java Version',
   textValue: SHIFT_TEXT + ' + J',
   keys: [KEY_CODE_SHIFT, KEY_CODE_J],
 }
 
 export const NEXT_GORM_SHORTCUT = {
-  label: 'Toggle to the Next GORM',
+  label: 'Toggle to the next GORM Implementation',
   textValue: SHIFT_TEXT + ' + G',
   keys: [KEY_CODE_SHIFT, KEY_CODE_G],
 }
 
 export const NEXT_SERVLET_SHORTCUT = {
-  label: 'Toggle to the Servlet Build',
+  label: 'Toggle to the next Embedded Servlet Container',
   textValue: SHIFT_TEXT + ' + S',
   keys: [KEY_CODE_SHIFT, KEY_CODE_S],
 }
 
 export const NEXT_TEST_SHORTCUT = {
-  label: 'Toggle to the Next Test Framework',
+  label: 'Toggle to the next Test Framework',
   textValue: SHIFT_TEXT + ' + T',
   keys: [KEY_CODE_SHIFT, KEY_CODE_T],
 }
