@@ -1,7 +1,13 @@
 function deriveCommand(type) {
   switch (type) {
     case 'WEB':
-      return 'create-webapp'
+      return 'create-app'
+    case 'REST_API':
+      return 'create-restapi'
+    case 'PLUGIN':
+      return 'create-plugin'
+    case 'WEB_PLUGIN':
+      return 'create-web-plugin'
     default:
       return `create-${type}`.toLowerCase()
   }
